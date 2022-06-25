@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     *{
+        margin: 0;
+        padding: 0;
+    }
+    p {
+        color: #f55;
+        background: yellow;
+        width: 200px;
+        line-height: 100px;
+        text-align:center;
+        margin: 30px;
+    }
+    div{
+        overflow: hidden;
+    }
+</style>
+<body>
+    <!-- 
+        BFC作用
+        1.阻止margin重叠---未开启BFC的上下两个相邻div会重叠
+     -->
+    <p>看看margin是多少</p>
+    <div>
+        <p>看看margin是多少</p>
+    </div>
+</body>
+</html>
